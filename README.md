@@ -1,4 +1,4 @@
-# Text-to-action-assistive-system
+# Text-to-action-assistive-system.
 
 # 🔹 1. Project Introduction
 
