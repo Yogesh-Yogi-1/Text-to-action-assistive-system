@@ -2,57 +2,42 @@
 
 # 🔹 1. Project Introduction
 
-The Text-to-Action Assistive System is an intelligent system that interprets user-provided text commands and converts them into corresponding real-world or system-level actions.
+The Text-to-Action Assistive System is an interactive application designed to convert text or voice input into visual human actions using 3D animations.
+The primary objective of this project is to assist people with hearing disabilities by representing information through gestures and body movements instead of audio.
 
-This system is mainly designed to assist:
-
-Physically challenged individuals
-
-Elderly users
-
-Users who require hands-free or minimal interaction
-
-By eliminating the dependency on keyboards and mouse devices, the system improves accessibility and ease of use.
-
-Examples
-
-“Turn on the light” → Light turns ON 💡
-
-“Open browser” → Browser opens 🌐
-
-“Send message” → Message is sent 📩
+The system uses rule-based intent detection to analyze the input sentence and maps it to predefined actions. These actions are then executed on a 3D animated character using Three.js and FBX animations, providing an intuitive and accessible form of communication.
 
 # 🔹 2. Problem Statement
 
-Traditional computer systems require continuous interaction using input devices such as keyboard and mouse, which can be difficult for physically challenged users.
-
-Proposed Solution
-
-The proposed system allows users to simply enter a text command, which is automatically interpreted and executed by the system without the need for manual control.
+People with hearing impairments often face challenges in understanding audio-based information, such as announcements, instructions, or alerts.
+Existing systems mostly rely on text or sound, which may not always be effective or inclusive.
+There is a need for an assistive system that can:
+Interpret text or speech input
+Convert it into meaningful visual actions
+Present information in a human-understandable gesture format
+This project aims to address that gap by offering a visual, gesture-based communication system.
 
 # 🔹 3. System Architecture
-Architecture Flow
-User Text Input
-      ↓
-Text Processing (NLP)
-      ↓
-Intent Detection
-      ↓
-Action Mapping
-      ↓
-Action Execution
 
-Architecture Explanation
-
-Text Input: User enters a command in text form
-
-NLP Module: Processes the text to understand its meaning
-
-Intent Detection: Identifies the user’s intention
-
-Action Mapping: Maps the intent to a specific system function
-
-Execution: Performs the required action
+## Input Module
+Accepts text input through a text box
+Accepts voice input using browser-based speech recognition
+Converts voice into text for further processing
+## Text Processing & Intent Detection Module
+Analyzes the input sentence
+Matches it with predefined phrases using a rule-based intent map
+Identifies the corresponding action (intent)
+## Action Mapping Module
+Maps detected intent to a specific FBX animation
+Ensures accurate one-to-one mapping between input and action
+## Animation Rendering Module
+Loads 3D character and animations using Three.js
+Plays animations smoothly using AnimationMixer
+Handles transitions and fallback to idle state
+## User Interface Module
+Displays current action status
+Shows the 3D animated character
+Designed for clarity, accessibility, and ease of use
 
 # 🔹 4. Module Description
 📌 Module 1: Text Input Module
