@@ -19,128 +19,77 @@ This project aims to address that gap by offering a visual, gesture-based commun
 
 #  3. System Architecture
 
+<img width="894" height="511" alt="image" src="https://github.com/user-attachments/assets/6e57d121-e8eb-4986-b107-9ebdd467aafc" />
+
+   
+#  4. Module Description
+
 ## Input Module
 1. Accepts text input through a text box 
 2. Accepts voice input using browser-based speech recognition 
 3. Converts voice into text for further processing
 
 ## Text Processing & Intent Detection Module
-Analyzes the input sentence
-Matches it with predefined phrases using a rule-based intent map
-Identifies the corresponding action (intent)
+1. Analyzes the input sentence
+2. Matches it with predefined phrases using a rule-based intent map
+3. Identifies the corresponding action (intent)
 ## Action Mapping Module
-Maps detected intent to a specific FBX animation
-Ensures accurate one-to-one mapping between input and action
+1. Maps detected intent to a specific FBX animation
+2. Ensures accurate one-to-one mapping between input and action
 ## Animation Rendering Module
-Loads 3D character and animations using Three.js
-Plays animations smoothly using AnimationMixer
-Handles transitions and fallback to idle state
+1. Loads 3D character and animations using Three.js
+2. Plays animations smoothly using AnimationMixer
+3. Handles transitions and fallback to idle state
 ## User Interface Module
-Displays current action status
-Shows the 3D animated character
-Designed for clarity, accessibility, and ease of use
+1. Displays current action status
+2. Shows the 3D animated character
+3. Designed for clarity, accessibility, and ease of use
 
-# 🔹 4. Module Description
-📌 Module 1: Text Input Module
+#  5. Technology Stack
 
-Accepts user commands in textual format
+Frontend: HTML, CSS, JavaScript
+3D Rendering: Three.js(WebGL)
+Animation Format: FBX
+Animation Control: AnimationMixer
+Speech Recognition: Web Speech API
+Styling: Responsive CSS
 
-Example: “Open notepad”
+#  6. Example Workflow
 
-📌 Module 2: NLP Processing Module
+1. User enters a sentence or speaks a command
+2. System converts voice input into text
+3. Text is analyzed to detect intent
+4. Detected intent is matched with an action
+5. Corresponding FBX animation is loaded
+6. 3D character performs the action
+7. Status is updated on the interface
 
-Removes stop words
+#  7. Advantages
 
-Extracts important keywords
+1. Improves accessibility for hearing-impaired users
+2. Real-time visual feedback
+3. Works offline for text input
+4. Lightweight and browser-based
+5. Scalable and extendable
+6. No expensive hardware required
 
-Identifies semantic meaning of the sentence
+#  8. Applications
 
-Example:
-“Please open the browser” → open + browser
+1. Assistive technology for hearing-impaired individuals
+2. Educational and e-learning platforms
+3. Emergency information systems
+4. Virtual assistants
+5. Human–computer interaction systems
+6. Training and simulation environments
 
-📌 Module 3: Intent Recognition Module
+#  9. Future Enhancements
 
-Detects the intention behind the user command
-
-Can be implemented using rule-based or machine-learning techniques
-
-User Text	Detected Intent
-Open browser	OPEN_APP
-Turn on light	DEVICE_ON
-📌 Module 4: Action Mapping Module
-
-Converts detected intent into system-level commands
-
-Intent	Action
-OPEN_APP	os.system()
-DEVICE_ON	GPIO / API
-📌 Module 5: Action Execution Module
-
-Executes the mapped action in real time
-
-Opens applications, controls devices, or sends messages
-
-# 🔹 5. Technology Stack
-
-Frontend: HTML / Tkinter / React
-
-Backend: Python
-
-Natural Language Processing: NLTK / SpaCy
-
-System Control: Python os, subprocess
-
-Hardware (Optional): Arduino / Raspberry Pi
-
-# 🔹 6. Example Workflow
-Input
-Open calculator
-
-Processing
-
-NLP extracts keywords
-
-Intent detected as OPEN_APP
-
-System executes calculator application
-
-Output
-
-👉 Calculator opens automatically 🧮
-
-# 🔹 7. Advantages
-
-Hands-free operation
-
-User-friendly interface
-
-Saves time and effort
-
-Highly beneficial for disabled users
-
-Can be integrated with smart devices
-
-# 🔹 8. Applications
-
-Smart Home Automation
-
-Assistive Technologies
-
-Desktop Automation Systems
-
-Healthcare Applications
-
-Voice/Text-controlled systems
-
-# 🔹 9. Future Enhancements
-
-Voice-to-Action integration
-
-AI-based adaptive learning
-
-Multi-language support
-
-Mobile application integration
+1. Integration of Natural Language Processing (NLP) models
+2. Support for sign language gestures
+3. Multilingual input support
+4. Mobile and tablet version
+5. AI-based intent classification
+6. Integration with VR/AR environments
 
 # 🔹 10. Web interface
 
