@@ -20,8 +20,8 @@ This project aims to address that gap by offering a visual, gesture-based commun
 #  3. System Architecture
 
 ## Input Module
-1. Accepts text input through a text box \n
-2. Accepts voice input using browser-based speech recognition \n
+1. Accepts text input through a text box 
+2. Accepts voice input using browser-based speech recognition 
 3. Converts voice into text for further processing
 
 ## Text Processing & Intent Detection Module
