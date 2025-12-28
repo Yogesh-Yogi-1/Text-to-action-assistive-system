@@ -1,13 +1,13 @@
 # Text-to-action-assistive-system.
 
-# 🔹 1. Project Introduction
+#  1. Project Introduction
 
 The Text-to-Action Assistive System is an interactive application designed to convert text or voice input into visual human actions using 3D animations.
 The primary objective of this project is to assist people with hearing disabilities by representing information through gestures and body movements instead of audio.
 
 The system uses rule-based intent detection to analyze the input sentence and maps it to predefined actions. These actions are then executed on a 3D animated character using Three.js and FBX animations, providing an intuitive and accessible form of communication.
 
-# 🔹 2. Problem Statement
+#  2. Problem Statement
 
 People with hearing impairments often face challenges in understanding audio-based information, such as announcements, instructions, or alerts.
 Existing systems mostly rely on text or sound, which may not always be effective or inclusive.
@@ -17,12 +17,12 @@ Convert it into meaningful visual actions
 Present information in a human-understandable gesture format
 This project aims to address that gap by offering a visual, gesture-based communication system.
 
-# 🔹 3. System Architecture
+#  3. System Architecture
 
 ## Input Module
-1.Accepts text input through a text box \n
-2.Accepts voice input using browser-based speech recognition \n
-3.Converts voice into text for further processing
+1. Accepts text input through a text box \n
+2. Accepts voice input using browser-based speech recognition \n
+3. Converts voice into text for further processing
 
 ## Text Processing & Intent Detection Module
 Analyzes the input sentence
