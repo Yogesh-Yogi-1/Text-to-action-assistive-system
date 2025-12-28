@@ -91,11 +91,11 @@ Styling: Responsive CSS
 5. AI-based intent classification
 6. Integration with VR/AR environments
 
-# 🔹 10. Web interface
+#  10. Web interface
 
 <img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/a93d79ba-11da-424d-b127-41e35c1e332d" />
 
 
-# 🔹 11. Viva / One-Line Description
+#  11. Viva / One-Line Description
 
 “The Text-to-Action Assistive System converts user-provided text commands into meaningful system actions using Natural Language Processing and automation techniques.”
